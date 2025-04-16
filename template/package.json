@@ -1,0 +1,16 @@
+{
+  "name": "project-name",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/game.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=./",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10",
+    "jetcode-scrubjs": "^2.1.0"
+  }
+}

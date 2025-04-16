@@ -1,0 +1,23 @@
+{
+  "name": "create-scrubjs",
+  "private": false,
+  "version": "1.0.0",
+  "description": "HTML5 Game Library with a Focus on Ease of Learning",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetcode-org/create-scrub.js.git"
+  },
+  "author": "Andrey Nilov",
+  "license": "MIT",
+  "bin":  "./index.js",
+  "bugs": {
+    "url": "https://github.com/jetcode-org/create-scrub.js/issues"
+  },
+  "homepage": "https://github.com/jetcode-org/create-scrub.js#readme",
+  "type": "module",
+  "files": [
+    "index.js",
+    "template"
+  ],
+  "keywords": ["HTML5", "game", "2d", "library", "canvas", "javascript", "typescript"]
+}
