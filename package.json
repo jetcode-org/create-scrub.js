@@ -1,7 +1,7 @@
 {
   "name": "create-scrubjs",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HTML5 Game Library with a Focus on Ease of Learning",
   "repository": {
     "type": "git",

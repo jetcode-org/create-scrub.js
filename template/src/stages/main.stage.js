@@ -6,22 +6,30 @@ export class MainStage extends Stage {
         this.backgroundColor = 'lightblue';
 
         // Usual sprite example
-        const cat = new NpcSprite(this);
-        cat.direction = 90;
+        const npc = new NpcSprite(this);
+        npc.direction = 90;
 
         // Singleton example
         const hero = HeroSprite.getInstance(this);
+        hero.y = 0;
 
-        this.forever(this.control(cat, hero));
+        this.forever(this.control(npc, hero));
     }
 
-    control(cat, hero) {
+    control(npc, hero) {
         return () => {
-            cat.move(5);
-            cat.bounceOnEdge();
+            if (npc.touchSprite(hero)) {
+                npc.talk();
 
-            // hero.move(3);
-            // hero.bounceOnEdge();
+                this.timeout(() => {
+                    this.forever(this.control(npc, hero));
+                }, 3000);
+
+                return false;
+            }
+
+            npc.move(5);
+            npc.bounceOnEdge();
         }
     }
 }

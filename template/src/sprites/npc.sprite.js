@@ -23,8 +23,6 @@ export class NpcSprite extends Sprite {
             width: 80,
             height: 80,
         });
-
-        this.forever(this.talk, 10000);
     }
 
     crabCostume(ctx) {
@@ -71,7 +69,7 @@ export class NpcSprite extends Sprite {
     }
 
     talk() {
-        this.say(this.phrases[this.phraseIndex], 10000);
+        this.say(this.phrases[this.phraseIndex], 3000);
         this.phraseIndex++;
 
         if (this.phraseIndex >= this.phrases.length) {
