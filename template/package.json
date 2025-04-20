@@ -2,7 +2,6 @@
   "name": "project-name",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "main": "src/game.js",
   "scripts": {
     "dev": "vite",
@@ -11,6 +10,6 @@
   },
   "devDependencies": {
     "vite": "^5.4.10",
-    "jetcode-scrubjs": "^2.1.0"
+    "jetcode-scrubjs": "^2.2.0"
   }
 }

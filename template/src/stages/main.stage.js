@@ -1,3 +1,5 @@
+import {Stage} from 'jetcode-scrubjs';
+
 import {NpcSprite} from '../sprites/npc.sprite.js';
 import {HeroSprite} from '../sprites/hero.sprite.js';
 

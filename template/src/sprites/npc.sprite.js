@@ -1,3 +1,5 @@
+import {Sprite} from 'jetcode-scrubjs';
+
 export class NpcSprite extends Sprite {
     phrases = [
         'Bring your games to life in the browser — fast and easy!',
