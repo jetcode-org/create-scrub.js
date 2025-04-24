@@ -1,3 +1,5 @@
+import {Sprite} from "jetcode-scrubjs";
+
 export class HeroSprite extends Sprite {
     static instance;
 
